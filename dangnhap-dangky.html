@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login & Register</title>
+    <style>
+      #registerform {
+        display: none; /* Ẩn form đăng ký ban đầu */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="loginForm">
+      <h2>LoginForm</h2>
+      <form action="index.html" method="post">
+        <label>user-name</label>
+        <input
+          type="text"
+          name="user-name"
+          placeholder="vui long nhap tai khoan"
+          required
+        /><br /><br />
+        <label>pass-word</label>
+        <input
+          type="password"
+          name="pass-word"
+          placeholder="vui long nhap mat khau"
+          required
+        />
+        <br /><br />
+        <input type="submit" value="Login" />
+        <button onclick="showRegister()">Register</button>
+      </form>
+      <br />
+    </div>
+
+    <div id="rregisterForm">
+      <h2>Register</h2>
+      <form>
+        <label>user-name:</label>
+        <input
+          type="text"
+          placeholder="vui long nhap ten"
+          name="ten dang ky"
+        /><br /><br />
+        <label>pass-word:</label>
+        <input
+          type="password"
+          placeholder="vui long nhap mat khau dang ky"
+        /><br /><br />
+        <label>Birthday:</label>
+        <input type="date" />
+        <button
+          type="button"
+          onclick="alert('Đã đăng ký (chưa có xử lý lưu)!')"
+        >
+          Submit Register
+        </button>
+      </form>
+      <br /><br />
+      <button onclick="Showlogin">Back to Login</button>
+      <!DOCTYPE html>
+      <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <title>Login & Register</title>
+          <style>
+            #registerform {
+              display: none; /* Ẩn form đăng ký ban đầu */
+            }
+          </style>
+        </head>
+        <body>
+          <div id="loginForm">
+            <h2>LoginForm</h2>
+            <form action="index.html" method="post">
+              <label>user-name</label>
+              <input
+                type="text"
+                name="user-name"
+                placeholder="vui long nhap tai khoan"
+                required
+              /><br /><br />
+              <label>pass-word</label>
+              <input
+                type="password"
+                name="pass-word"
+                placeholder="vui long nhap mat khau"
+                required
+              />
+              <br /><br />
+              <input type="submit" value="Login" />
+              <button onclick="showRegister()">Register</button>
+            </form>
+            <br />
+          </div>
+
+          <div id="rregisterForm">
+            <h2>Register</h2>
+            <form>
+              <label>user-name:</label>
+              <input
+                type="text"
+                placeholder="vui long nhap ten"
+                name="ten dang ky"
+              /><br /><br />
+              <label>pass-word:</label>
+              <input
+                type="password"
+                placeholder="vui long nhap mat khau dang ky"
+              /><br /><br />
+              <label>Birthday:</label>
+              <input type="date" />
+              <button
+                type="button"
+                onclick="alert('Đã đăng ký (chưa có xử lý lưu)!')"
+              >
+                Submit Register
+              </button>
+            </form>
+            <br /><br />
+            <button onclick="Showlogin">Back to Login</button>
+            <!DOCTYPE html>
+            <html lang="en">
+              <head>
+                <meta charset="UTF-8" />
+                <meta
+                  name="viewport"
+                  content="width=device-width, initial-scale=1.0"
+                />
+                <title>Login & Register</title>
+                <style>
+                  #registerform {
+                    display: none; /* Ẩn form đăng ký ban đầu */
+                  }
+                </style>
+              </head>
+              <body>
+                <div id="loginForm">
+                  <h2>LoginForm</h2>
+                  <form action="index.html" method="post">
+                    <label>user-name</label>
+                    <input
+                      type="text"
+                      name="user-name"
+                      placeholder="vui long nhap tai khoan"
+                      required
+                    /><br /><br />
+                    <label>pass-word</label>
+                    <input
+                      type="password"
+                      name="pass-word"
+                      placeholder="vui long nhap mat khau"
+                      required
+                    />
+                    <br /><br />
+                    <input type="submit" value="Login" />
+                    <button onclick="showRegister()">Register</button>
+                  </form>
+                  <br />
+                </div>
+
+                <div id="registerForm">
+                  <h2>Register</h2>
+                  <form>
+                    <label>user-name:</label>
+                    <input
+                      type="text"
+                      placeholder="vui long nhap ten"
+                      name="ten dang ky"
+                    /><br /><br />
+                    <label>pass-word:</label>
+                    <input
+                      type="password"
+                      placeholder="vui long nhap mat khau dang ky"
+                    /><br /><br />
+                    <label>Birthday:</label>
+                    <input type="date" />
+                    <button
+                      type="button"
+                      onclick="alert('Đã đăng ký (chưa có xử lý lưu)!')"
+                    >
+                      Submit Register
+                    </button>
+                    <br /><br />
+                    <button onclick="Showlogin">Back to Login</button>
+                    <button
+                      type="reset"
+                      onclick="alert('đã xoá câu trả lời')"
+                    ></button>
+                  </form>
+                </div>
+
+                <script>
+                  function showRegister() {
+                    document.getElementById("loginForm").style.display = "none";
+                    document.getElementById("registerForm").style.display =
+                      "block";
+                  }
+
+                  function showLogin() {
+                    document.getElementById("registerForm").style.display =
+                      "none";
+                    document.getElementById("loginForm").style.display =
+                      "block";
+                  }
+                </script>
+              </body>
+            </html>
+          </div>
+          <script>
+            function showRegister() {
+              document.getElementById("loginForm").style.display = "none";
+              document.getElementById("registerForm").style.display = "block";
+            }
+
+            function showLogin() {
+              document.getElementById("registerForm").style.display = "none";
+              document.getElementById("loginForm").style.display = "block";
+            }
+          </script>
+        </body>
+      </html>
+    </div>
+    <script>
+      function showRegister() {
+        document.getElementById("loginForm").style.display = "none";
+        document.getElementById("registerForm").style.display = "block";
+      }
+
+      function showLogin() {
+        document.getElementById("registerForm").style.display = "none";
+        document.getElementById("loginForm").style.display = "block";
+      }
+    </script>
+  </body>
+</html>
